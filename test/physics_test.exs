@@ -3,15 +3,15 @@ defmodule PhysicsTest do
   doctest Physics
 
   test "convert to km" do
-    assert Calcs.convert_to_km(1000) == 1
+    assert Calcs.to_km(1000) == 1
   end
 
   test "rounded to nearest tenth 1" do
-    assert Calcs.rounded_to_nearest_tenth(11.123) == 11.2
+    assert Calcs.to_nearest_tenth(11.123) == 11.2
   end
   
   test "rounded to nearest tenth 2" do
-    assert Calcs.rounded_to_nearest_tenth(11.192) == 11.2
+    assert Calcs.to_nearest_tenth(11.192) == 11.2
   end
 
   test "earth escape velocity" do
