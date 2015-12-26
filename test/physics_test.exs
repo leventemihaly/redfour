@@ -29,4 +29,15 @@ defmodule PhysicsTest do
     assert moon_ev == 2.4
   end
   
+  test "earth orbital acceleartion" do
+   acc = Physics.Rocketry.orbital_acceleration(100)
+   assert Float.ceil(acc, 2) == 9.52
+  end
+  
+  test "orbital term" do
+   t = Physics.Rocketry.orbital_term(250)
+   IO.inspect(t)
+   km = Physics.Rocketry.orbital_height(4)
+   IO.inspect(km)
+  end
 end
