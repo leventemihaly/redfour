@@ -19,5 +19,14 @@ defmodule PhysicsTest do
     assert earth_ev == 11.2
   end
   
+  test "mars escape velocity" do
+    mars_ev = Physics.Rocketry.escape_velocity(:mars)
+    assert mars_ev == 5.1
+  end
+  
+  test "moon escape velocity" do
+    moon_ev = Physics.Rocketry.escape_velocity(:moon)
+    assert moon_ev == 2.4
+  end
   
 end
